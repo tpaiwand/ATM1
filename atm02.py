@@ -3,7 +3,7 @@ print("Welcome to the Example Bank")
 user_pin = 12345
 accounts = {"ABC": 12345, "ABCD": 12346, "ABCDE": 12347}
 trials = 3
-balance = int(50000)
+balance = 50000
 account_valid = False
 
 while trials != 0:
@@ -26,7 +26,7 @@ while trials != 0:
         
         if user_choice == "W":
             user_withdraw = int(input("Please enter the amount you want to withdraw: "))
-            total_balance = user_withdraw - balance
+            total_balance = balance - user_withdraw
             print(user_withdraw, "$ have been withdrawn from your account, current balance is $", total_balance) 
         
         if user_choice == "B":
@@ -52,7 +52,5 @@ while trials != 0:
     else:
         print("Thank you for using the Example Bank")
         break
-    
-        continue
-      
+              
       
